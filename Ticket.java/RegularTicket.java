@@ -1,6 +1,15 @@
-public class RegularTicket{
+public class RegularTicket {
+    public String specialServices;
   
-  RegularTicket(){
-         System.out.println("hi");
-         }
+    public RegularTicket(String specialServices){
+        this.specialServices=specialServices;
+    }
+  
+    public String getSpecialServices() {
+        return this.specialServices;
+    }
+  
+    public void updateSpecialServices(String specialServices){
+        this.specialServices=specialServices;
+    }
 }
